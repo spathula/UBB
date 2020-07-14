@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GUI</class>
+ <widget class="QMainWindow" name="GUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Assignment12</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="SetPaths">
+       <attribute name="title">
+        <string>SET FILE PATHS</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="setPaths_Layout">
+          <item row="3" column="1">
+           <widget class="QPushButton" name="setMyListPath_Button">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>SET MY LIST PATH</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLineEdit" name="setFilePath">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="setMyListPath">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="setFilePath_Button">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>SET FILE PATH</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLabel" name="setPaths_Label">
+            <property name="font">
+             <font>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="HighSec">
+       <attribute name="title">
+        <string>HIGH-SEC</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="list_Layout">
+          <item row="1" column="1">
+           <widget class="QListWidget" name="list_Widget"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="list_Label">
+            <property name="text">
+             <string>Recordings list</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QFormLayout" name="HighSec_Form_Layout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="Title_Label">
+            <property name="text">
+             <string>Title</string>
+            </property>
+            <property name="buddy">
+             <cstring>Title_LEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="Title_LEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="Location_Label">
+            <property name="text">
+             <string>Location</string>
+            </property>
+            <property name="buddy">
+             <cstring>Location_LEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="Location_LEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="TimeOfCreation_Label">
+            <property name="text">
+             <string>Time of creation</string>
+            </property>
+            <property name="buddy">
+             <cstring>TimeOfCreation_LEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="TimeOfCreation_LEdit"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="TimesAccessed_Label">
+            <property name="text">
+             <string>Times accessed</string>
+            </property>
+            <property name="buddy">
+             <cstring>TimesAccessed_LEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="TimesAccessed_LEdit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="FootagePreview_Label">
+            <property name="text">
+             <string>Footage preview</string>
+            </property>
+            <property name="buddy">
+             <cstring>FootagePreview_LEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="FootagePreview_LEdit"/>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <layout class="QGridLayout" name="HighSec_Button_Layout">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="Update_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Update</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="Delete_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Delete</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QPushButton" name="Redo_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Redo</string>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+Y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="Add_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="List_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>List</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="Undo_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Undo</string>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+Z</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="LowSec">
+       <attribute name="title">
+        <string>LOW-SEC</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="CurrentRecording_Layout">
+          <item>
+           <widget class="QLabel" name="CurrentRecording_Label">
+            <property name="text">
+             <string>Current Recording</string>
+            </property>
+            <property name="buddy">
+             <cstring>CurrentRecording_Widget</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="CurrentRecording_Widget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <layout class="QVBoxLayout" name="FilteredList_Layout">
+          <item>
+           <widget class="QLabel" name="FilteredList_Label">
+            <property name="text">
+             <string>Filtered List</string>
+            </property>
+            <property name="buddy">
+             <cstring>FilteredList_Widget</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="FilteredList_Widget"/>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QFormLayout" name="LowSec_Form_Layout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="Title_Label_ModeB">
+            <property name="text">
+             <string>Title</string>
+            </property>
+            <property name="buddy">
+             <cstring>Title_LEdit_ModeB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="Title_LEdit_ModeB"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="Location_Label_ModeB">
+            <property name="text">
+             <string>Location</string>
+            </property>
+            <property name="buddy">
+             <cstring>Location_LEdit_ModeB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="Location_LEdit_ModeB"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="TimesAccessed_Label_ModeB">
+            <property name="text">
+             <string>Times Accessed</string>
+            </property>
+            <property name="buddy">
+             <cstring>TimesAccessed_LEdit_ModeB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="TimesAccessed_LEdit_ModeB"/>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <layout class="QGridLayout" name="LowSec_Button_Layout">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="NextRecording_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Next Recording</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="3">
+             <widget class="QPushButton" name="MyList_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>My List</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="SaveRecording_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Save Recording</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="FilteredList_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Filtered List</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0" colspan="3">
+             <widget class="QPushButton" name="OpenMyList_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Open My List</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="3">
+             <widget class="QPushButton" name="MyListWindow_Button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Open My List Window</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="1">
+         <layout class="QVBoxLayout" name="MyList_Layout">
+          <item>
+           <widget class="QLabel" name="MyList_Label">
+            <property name="text">
+             <string>My List</string>
+            </property>
+            <property name="buddy">
+             <cstring>MyList_Widget</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="MyList_Widget"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Assignment12.qrc"/>
+ </resources>
+ <connections/>
+</ui>
